@@ -36,46 +36,35 @@ How can we enhance the safety of Personal Mobility Devices (PMDs) in urban envir
 - Numpy
 - Random
 
-## Data Aquisition
+## Dataset
 
-#The data used in this project is from [Kaggle](https://www.kaggle.com/datasets/bhaveshmittal/melanoma-cancer-dataset/data)
-
-## EDA and Preprocessing
-
+### Udacity Self Driving Car Data [Roboflow](https://public.roboflow.com/object-detection/self-driving-car)
+### Singapore Traffic Sign Data [Github](https://github.com/eugeneyan84/Classification-and-Detection-of-Singapore-Road-Traffic-Signs/tree/main/Dataset)
 
 ### Exploratory Data Analysis (EDA)
+- There are total 7 type of signs shortlisted in the Singapore Traffic Data
 
-
-### Image Preprocessing
-
+### Image Augmentation
+- Singapore Traffic Sign data have been 3 augmentation method, which are saturation, rotation and blur.
 
 ## Modelling
+- Pytorch Simple CNN and YOLOv8 CNN models are ultilized in this project
+1.  Simple CNN with Pytorch framework, a basic multi-class single-prediction model with Singapore Traffic Sign Data only
+2.  YOLOv8 Pytorch based CNN pre-trained model. Multi-class multi-prediction model with Singapore Traffic Sign Data only
+3.  YOLOv8 Pytorch based CNN pre-trained model. Multi-class multi-prediction model with Singapore Traffic Sign + Udacity data
 
-
-
-### Model Training and Results
-
-| Model                  | Recall | Process Time (min) |
-|-----------------------------------------|---------------------|
-| Inception-ResNetV2          |  0.82  |       155           |
-| Sequential              |  0.90  |       50            |
-| Hybrid Model             |  0.91  |       160           |
-| SVM                    |  0.87  |       60            |
-
-The Sequential model stands out with a relatively short processing time while maintaining competitive accuracy and recall. This combination of efficiency and performance makes it an attractive choice for the skin cancer detection system, addressing the concerns outlined in the problem statement.
-
-## Model Selection
-
-
-
-## Model Tuning
-
+## Hypertuning
+- Hyperparameters tuned are learning rate and Batch size.
+- Learning Rate: 0.001, 0.01 and 0.1
+- Batch Size: 8 and 16
+- Based model perform better compare to hpyertuning. Have 80.5% sensitivity
 
 ## Conclusion
-
-
+- TheiaVision helps to detect object with 80.5% sensitivity
 
 ## Recommendations
-
-
-
+- Handle imbalance datasets (SMOTE)
+- Include Diverse Image of Traffic Sign (Currently Data from DashCam Only, low resolution)
+- Stereo Video for depth estimation
+- Including hazard detection (pavement condition, construction, etc.)
+- Install Speaker for Voice Feedback to PMD Users
