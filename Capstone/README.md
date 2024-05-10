@@ -38,8 +38,8 @@ How can we enhance the safety of Personal Mobility Devices (PMDs) in urban envir
 
 ## Dataset
 
-### Udacity Self Driving Car Data [Roboflow](https://public.roboflow.com/object-detection/self-driving-car)
-### Singapore Traffic Sign Data [Github](https://github.com/eugeneyan84/Classification-and-Detection-of-Singapore-Road-Traffic-Signs/tree/main/Dataset)
+1. Udacity Self Driving Car Data: [Roboflow](https://public.roboflow.com/object-detection/self-driving-car)
+2. Singapore Traffic Sign Data: [Github](https://github.com/eugeneyan84/Classification-and-Detection-of-Singapore-Road-Traffic-Signs/tree/main/Dataset)
 
 ### Exploratory Data Analysis (EDA)
 - There are total 7 type of signs shortlisted in the Singapore Traffic Data
