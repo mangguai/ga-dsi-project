@@ -1,0 +1,18 @@
+names:
+- curveleft_sign
+- curveright_sign
+- mandatorystop_sign
+- noentry_sign
+- nojaywalking_sign
+- pedestriancrossing_sign
+- zebracrossing_sign
+nc: 7
+roboflow:
+  license: Private
+  project: obstacle-detection-pgo7d
+  url: https://app.roboflow.com/mangguai/obstacle-detection-pgo7d/3
+  version: 3
+  workspace: mangguai
+test: test/images
+train: train/images
+val: valid/images
