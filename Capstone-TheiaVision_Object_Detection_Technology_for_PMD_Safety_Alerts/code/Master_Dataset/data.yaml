@@ -1,0 +1,25 @@
+# Define the dataset paths and class labels
+train: /home/mangguai/capstone/code/Master_Dataset/train/images
+val: /home/mangguai/capstone/code/Master_Dataset/valid/images
+test: /home/mangguai/capstone/code/Master_Dataset/test/images
+
+# Define class names in the order of class indices
+names:
+  - curveleft_sign
+  - curveright_sign
+  - mandatorystop_sign
+  - noentry_sign
+  - nojaywalking_sign
+  - pedestriancrossing_sign
+  - zebracrossing_sign      # Class 6
+  - biker                     # Class 7
+  - car                       # Class 8
+  - pedestrian                # Class 9
+  - trafficlight              # Class 10
+  - trafficlight_green        # Class 11
+  - trafficlight_red          # Class 12
+  - trafficlight_yellow       # Class 13
+  - truck                     # Class 14
+
+# Number of classes
+nc: 15
